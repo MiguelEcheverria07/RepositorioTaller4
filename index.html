@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes por Colombia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/utilidades.js"></script>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    var divPadreUno = crearNodo("div");
+    var divPadreDos = crearNodo("div");
+    var divPadreTres = crearNodo("div");
+    var imagenFondo = crearNodoImagen("fondo.jpg", "FondoImg");
+    var divMenu = crearNodo("div");
+    var divNav = crearNodo("div");
+    var logoImg = crearNodoImagen("logo.png", "LogoPng");
+    var home = crearNodoConTexto("a", "HOME");
+    var services = crearNodoConTexto("a", "SERVICES");
+    var events = crearNodoConTexto("a", "EVENTS");
+    var about = crearNodoConTexto("a", "ABOUT US");
+    var contact = crearNodoConTexto("a", "CONTACT");
+    var divMedio = crearNodo("div");
+    var spanPrecio = crearNodoConTexto("span", "$8,450");
+    var veniceItaly = crearNodoConTexto("h3", "Venice, Italy");
+    var parrafoEnDivMedio = crearNodoConTexto("p", "Travel is free responsive template by templatemo.");
+    var parrafoDos = crearNodoConTexto("p", "All images used in this template are from ");
+    var unsplash = crearNodoConTexto("span", "Unsplash.");
+    var botonVerdeMedio = crearNodoConTexto("a", "PRE-BOOKING");
+    var variosDivs = crearNodo("div");
+    var divPaisUno = crearNodo("div");
+    var divPaisDos = crearNodo("div");
+    var divPaisTres = crearNodo("div");
+    var divPaisCuatro = crearNodo("div");
+    var tituloItaly = crearNodoConTexto("h4", "ITALY");
+    var tituloFrance =  crearNodoConTexto("h4", "FRANCE");
+    var tituloGermany = crearNodoConTexto("h4", "GERMANY");
+    var tituloSpain = crearNodoConTexto("h4", "SPAIN");
+    var imagenItaly = crearNodoImagen("escaleras.jpg", "EscalerasJpg");
+    var imagenFrance = crearNodoImagen("personas.jpg", "PersonasJpg");
+    var imagenGermany = crearNodoImagen("edificios.jpg", "EdificiosJpg");
+    var imagenSpain = crearNodoImagen("montañas.jpg", "MontañasJpg");
+    var ciudadesItaly = crearNodoConTexto("span", "Rome, Milan, Naples");
+    var ciudadesFrance = crearNodoConTexto("span", "Paris, Marseille, Lyon");
+    var ciudadesGermany = crearNodoConTexto("span", "Berlin, Hamburg, Munich");
+    var ciudadesSpain = crearNodoConTexto("span", "Madrid, Barcelona, Valencia");
+    var hotelItaly = crearNodoConTexto("span", "SILVER HOTEL, 4 NIGHTS");
+    var hotelFrance = crearNodoConTexto("span", "NEW PALACE, 5 NIGHTS, 5 STARS");
+    var hotelGermany = crearNodoConTexto("span", "LUXE HOTEL, 5 NIGHTS, 6 STARS");
+    var hotelSpain = crearNodoConTexto("span", "GOOD HOTEL, 4 NIGHTS, 6 STARS");
+    var precioItaly = crearNodoConTexto("a", "$1,800 BOOK NOW");
+    var precioFrance = crearNodoConTexto("a", "$2,300 BOOK NOW");
+    var precioGermany = crearNodoConTexto("a", "$3,100 BOOK NOW");
+    var precioSpain = crearNodoConTexto("a", "$4,800 BOOK NOW");
+    adicionarNodoABody(divPadreUno); 
+    adicionarNodoAContenedor(divMenu, divPadreUno); //divPadreUno > divMenu
+    adicionarNodoAContenedor(logoImg, divMenu); //divMenu > Elementos
+    adicionarNodoAContenedor(divNav, divMenu)
+    adicionarNodoAContenedor(home, divNav);
+    adicionarNodoAContenedor(services, divNav);
+    adicionarNodoAContenedor(events, divNav);
+    adicionarNodoAContenedor(about, divNav);
+    adicionarNodoAContenedor(contact, divNav); 
+    adicionarNodoAContenedor(divMedio, divPadreUno); //divMedio > Elementos
+    adicionarNodoAContenedor(spanPrecio, divMedio);
+    adicionarNodoAContenedor(veniceItaly, divMedio);
+    adicionarNodoAContenedor(parrafoEnDivMedio, divMedio);
+    adicionarNodoAContenedor(parrafoDos, divMedio);
+    adicionarNodoAContenedor(unsplash, divMedio);
+    adicionarNodoAContenedor(botonVerdeMedio, divMedio);
+    adicionarNodoAContenedor(variosDivs, divPadreUno); //Muchos Divs > Elementos
+    adicionarNodoAContenedor(divPaisUno,variosDivs);
+    adicionarNodoAContenedor(divPaisDos,variosDivs);
+    adicionarNodoAContenedor(divPaisTres,variosDivs);
+    adicionarNodoAContenedor(divPaisCuatro,variosDivs);
+    adicionarNodoAContenedor(tituloItaly, divPaisUno);
+    adicionarNodoAContenedor(imagenItaly, divPaisUno);
+    adicionarNodoAContenedor(ciudadesItaly, divPaisUno);
+    adicionarNodoAContenedor(hotelItaly, divPaisUno);
+    adicionarNodoAContenedor(precioItaly, divPaisUno);
+    adicionarNodoAContenedor(tituloFrance, divPaisDos);
+    adicionarNodoAContenedor(imagenFrance, divPaisDos);
+    adicionarNodoAContenedor(ciudadesFrance, divPaisDos);
+    adicionarNodoAContenedor(hotelFrance, divPaisDos);
+    adicionarNodoAContenedor(precioFrance, divPaisDos);
+    adicionarNodoAContenedor(tituloGermany, divPaisTres);
+    adicionarNodoAContenedor(imagenGermany, divPaisTres);
+    adicionarNodoAContenedor(ciudadesGermany, divPaisTres);
+    adicionarNodoAContenedor(hotelGermany, divPaisTres);
+    adicionarNodoAContenedor(precioGermany, divPaisTres);
+    adicionarNodoAContenedor(tituloSpain, divPaisCuatro);
+    adicionarNodoAContenedor(imagenSpain, divPaisCuatro);
+    adicionarNodoAContenedor(ciudadesSpain, divPaisCuatro);
+    adicionarNodoAContenedor(hotelSpain, divPaisCuatro);
+    adicionarNodoAContenedor(precioSpain, divPaisCuatro);
+    adicionarNodoABody(divPadreDos); //divPadreDos > Elementos
+    adicionarNodoABody(divPadreTres);
+    divPadreUno.setAttribute("class", "container-main");
+    divPadreDos.setAttribute("class", "second-main-container");
+    divMenu.setAttribute("class", "menu-container");
+    home.setAttribute("id", "home");
+    divMedio.setAttribute("class", "middle-container");
+    spanPrecio.setAttribute("class", "span-price");
+    veniceItaly.setAttribute("class", "veniceItaly");
+    variosDivs.setAttribute("class", "many-containers");
+    divPaisUno.setAttribute("class", "divPaisUno");
+    divPaisDos.setAttribute("class", "divPaisDos");
+    divPaisTres.setAttribute("class", "divPaisTres");
+    divPaisCuatro.setAttribute("class", "divPaisCuatro");
+</script>
+
+</html>
