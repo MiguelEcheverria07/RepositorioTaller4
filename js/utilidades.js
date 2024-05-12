@@ -1,4 +1,4 @@
-var directorioImagenes = "../recursos/imagenes/"
+var directorioImagenes = "recursos/imagenes/"
 
 function crearNodo(tipoNodo) {
     var nodo = document.createElement(tipoNodo);
