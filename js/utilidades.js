@@ -311,7 +311,7 @@ divMedio.style.zIndex = '2';
 spanPrecio.style.backgroundColor = 'var(--rojo)';
 spanPrecio.style.color = '#fff';
 spanPrecio.style.fontWeight = '700';
-spanPrecio.style.fontSize = '2.1vw';
+spanPrecio.style.fontSize = '28px';
 spanPrecio.style.padding = '0.4vw 1.3vw';
 
 // Estilos para .veniceItaly
@@ -322,7 +322,6 @@ veniceItaly.style.color = '#444';
 
 // Estilos para .middle-container > p
 parrafoEnDivMedio.style.color = 'var(--grisClaro)';
-parrafoEnDivMedio.style.fontSize = '1.02vw';
 
 // Estilos específicos para p:nth-of-type(1) y p:nth-of-type(2)
 parrafoEnDivMedio.style.display = 'block';
@@ -333,7 +332,6 @@ parrafoDos.style.display = 'inline';
 
 // Estilos para .middle-container > span:nth-of-type(2)
 unsplash.style.color = 'var(--verde)';
-unsplash.style.fontSize = '1.02vw';
 
 // Estilos para .middle-container > a
 botonVerdeMedio.style.backgroundColor = 'var(--verde)';
@@ -344,7 +342,6 @@ botonVerdeMedio.style.margin = '2vw auto 0 auto';
 botonVerdeMedio.style.padding = '0.8vw 2.2vw';
 botonVerdeMedio.style.color = '#fff';
 botonVerdeMedio.style.fontWeight = '700';
-botonVerdeMedio.style.fontSize = '1.05vw';
 
 // Estilos para .country-container
 contenedorPaises.style.position = 'relative';
@@ -388,7 +385,7 @@ var ultimoDiv = variosDivs.children[3];
 var ultimoLink = ultimoDiv.children[0];
 ultimoLink.style.position = 'absolute';
 ultimoLink.style.top = '130px';
-ultimoLink.style.right = '26px';
+ultimoLink.style.left = 'calc(100% - 5.8%)';
 ultimoLink.style.marginTop = '12px';
 link1.style.setProperty('padding', '12px 15px');
 ultimoLink.style.setProperty('padding', '12px 15px');
@@ -407,7 +404,7 @@ imagenes.forEach(function(imagen) {
 });
 
 // Estilos para @media (max-width: 1000px)
-var mediaQuery1000 = window.matchMedia('(max-width: 1000px)');
+var mediaQuery1000 = window.matchMedia('(max-width: 1100px)');
 if (mediaQuery1000.matches) {
     divs[divs.length - 1].style.display = 'none';
     divs.forEach(function(div) {
@@ -418,7 +415,7 @@ if (mediaQuery1000.matches) {
 }
 
 // Estilos para @media (max-width:720px)
-var mediaQuery720 = window.matchMedia('(max-width: 720px)');
+var mediaQuery720 = window.matchMedia('(max-width: 820px)');
 if (mediaQuery720.matches) {
     divs.forEach(function(div) {
         div.style.width = '38%';
@@ -457,8 +454,6 @@ spans2.forEach(function(span) {
     span.style.margin = '5px 0';
     span.style.fontWeight = '400';
 });
-
-
 
 // Estilos para .second-main-container
 divPadreDos.style.backgroundColor = '#eee';
