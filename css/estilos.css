@@ -18,7 +18,6 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .container-main::after {
@@ -68,7 +67,15 @@ body {
     text-decoration: none;
 }
 
-
+.middle-container {
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    padding: 2.5vw;
+    left: 0;
+    margin: 15vw 0 0 7.8vw;
+    z-index: 2;
+}
 
 .span-price {
     background-color: var(--rojo);
@@ -117,37 +124,60 @@ body {
     font-size: 1.05vw;
 }
 
-.middle-container {
-    position: absolute;
-    background-color: #fff;
-    text-align: center;
-    padding: 2.5vw;
-    left: 0;
-    margin: 15vw 0 0 7.8vw;
-    z-index: 2;
-}
-
 .country-container {
-    border: 1px solid blue;
     position: relative;
+    margin-top: -53px;
     height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-
 .many-containers {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     position: relative;
     z-index: 2;
 }
 
 .many-containers>div {
     margin-bottom: 20px;
+    width: 20%;
+}
+
+.many-containers>div>img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .many-containers>div:nth-last-of-type(1) {
+        display: none;
+    }
+
+    .many-containers > div{
+        width: 28%;
+    }
+
+    .many-containers{
+        flex-wrap: nowrap;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:720px){
+    .many-containers > div {
+        width: 38%;
+    }
+    
+    .many-containers{
+        flex-wrap: wrap;
+    }
+
+    .many-containers>div:nth-last-of-type(1) {
+        display: block;
+    }
 }
 
 .many-containers>div>h4 {
@@ -207,9 +237,8 @@ body {
     text-align: center;
 }
 
-
-@media (max-width: 1150px) {
-   
+.second-main-container>div:nth-last-of-type(1) {
+    border-right: 1px solid #d4d4d4;
 }
 
 @media (max-width: 1050px) {
@@ -217,9 +246,15 @@ body {
         grid-template-columns: auto auto auto;
         justify-content: space-around;
     }
+
     .second-main-container>div {
         border: 0;
     }
+
+    .second-main-container>div:nth-last-of-type(1) {
+        border: 0;
+    }
+
 }
 
 @media (max-width: 800px) {
