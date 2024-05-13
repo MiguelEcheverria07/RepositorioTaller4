@@ -196,7 +196,8 @@ body {
     justify-content: center;
     grid-auto-flow: dense;
     grid-auto-columns: minmax(10vw, 1fr);
-    position: relative;;
+    position: relative;
+    ;
 
 }
 
@@ -206,13 +207,18 @@ body {
     text-align: center;
 }
 
-.second-main-container>img {}
-
-
 
 @media (max-width: 1150px) {
+   
+}
+
+@media (max-width: 1050px) {
     .second-main-container {
         grid-template-columns: auto auto auto;
+        justify-content: space-around;
+    }
+    .second-main-container>div {
+        border: 0;
     }
 }
 
