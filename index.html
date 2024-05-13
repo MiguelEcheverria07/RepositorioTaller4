@@ -50,7 +50,7 @@
     var ciudadesFrance = crearNodoConTexto("span", "Paris, Marseille, Lyon");
     var ciudadesGermany = crearNodoConTexto("span", "Berlin, Hamburg, Munich");
     var ciudadesSpain = crearNodoConTexto("span", "Madrid, Barcelona, Valencia");
-    var hotelItaly = crearNodoConTexto("span", "SILVER HOTEL, 4 NIGHTS");
+    var hotelItaly = crearNodoConTexto("span", "SILVER HOTEL, 4 NIGHTS, 5 STARS");
     var hotelFrance = crearNodoConTexto("span", "NEW PALACE, 5 NIGHTS, 5 STARS");
     var hotelGermany = crearNodoConTexto("span", "LUXE HOTEL, 5 NIGHTS, 6 STARS");
     var hotelSpain = crearNodoConTexto("span", "GOOD HOTEL, 4 NIGHTS, 6 STARS");
@@ -99,6 +99,7 @@
     adicionarNodoAContenedor(ciudadesSpain, divPaisCuatro);
     adicionarNodoAContenedor(hotelSpain, divPaisCuatro);
     adicionarNodoAContenedor(precioSpain, divPaisCuatro);
+
     adicionarNodoABody(divPadreDos); //divPadreDos > Elementos
     adicionarNodoABody(divPadreTres);
     divPadreUno.setAttribute("class", "container-main");
@@ -109,10 +110,8 @@
     spanPrecio.setAttribute("class", "span-price");
     veniceItaly.setAttribute("class", "veniceItaly");
     variosDivs.setAttribute("class", "many-containers");
-    divPaisUno.setAttribute("class", "divPaisUno");
-    divPaisDos.setAttribute("class", "divPaisDos");
-    divPaisTres.setAttribute("class", "divPaisTres");
-    divPaisCuatro.setAttribute("class", "divPaisCuatro");
+
+
 </script>
 
 </html>

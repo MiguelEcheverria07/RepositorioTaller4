@@ -127,31 +127,57 @@ body {
 .many-containers {
     border: 1px solid red;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     position: absolute;
-    justify-content: space-between;
-    margin: 45vw 0 0 7.72vw;
-    height: 400px;
-    width: 83.4vw;
+    margin: 44.35vw 0 0 7.72vw;
     z-index: 2;
 }
 
-.many-containers > div{
+.many-containers>div {
     border: 1px solid black;
+    margin-bottom: 20px;
 }
 
-.divPaisUno {
-
+.many-containers> div > h4{
+    background-color: var(--verde);
+    color: #fff;
+    margin: 0;
+    font-size: 23px;
+    font-weight: 400;
+    padding: 10px 0;
+    text-align: center;
 }
 
-.divPaisDos {
-
+.many-containers > div > span:nth-of-type(1){
+    display: block;
+    color: var(--verde);
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
-.divPaisTres {}
+.many-containers > div > span:nth-of-type(2){
+    color: var(--rojo);
+    display: block;
+    margin: 5px 0;
+    font-weight: 400;
+}
 
-.divPaisCuatro {}
+.many-containers > div > a{
+    display: block;
+    background-color: var(--verde);
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+
+}
 
 .second-main-container {
-    height: 600px;
-    background-color: gray;
+  
 }
