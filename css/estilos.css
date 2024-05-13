@@ -30,21 +30,23 @@ body {
 }
 
 .menu-container {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 2vw 1.9vw;
+    padding: 2vw 0 2vw 1.9vw;
     margin-top: 4.42vw;
     height: 46px;
-    width: 79.6vw;
+
     z-index: 2;
     overflow: hidden;
 }
 
 .menu-container>div {
-    position: absolute;
+    position: relative;
+    margin-left: 30vw;
+    border: 1px solid blue;
     right: 0;
     top: 0;
     bottom: 0;
@@ -144,7 +146,7 @@ body {
 
 .many-containers>div {
     margin-bottom: 20px;
-    width: 20%;
+    width: 22%;
 }
 
 .many-containers>div>img {
@@ -162,7 +164,7 @@ body {
 
     .many-containers{
         flex-wrap: nowrap;
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
 
