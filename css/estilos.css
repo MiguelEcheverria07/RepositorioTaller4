@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     height: 48.15vw;
     position: relative;
+    margin-bottom: 50vh;
 }
 
 .container-main::after {
@@ -124,8 +125,12 @@ body {
     z-index: 2;
 }
 
+.country-container {
+    border: 1px solid blue;
+}
+
+
 .many-containers {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -136,11 +141,10 @@ body {
 }
 
 .many-containers>div {
-    border: 1px solid black;
     margin-bottom: 20px;
 }
 
-.many-containers> div > h4{
+.many-containers>div>h4 {
     background-color: var(--verde);
     color: #fff;
     margin: 0;
@@ -150,7 +154,7 @@ body {
     text-align: center;
 }
 
-.many-containers > div > span:nth-of-type(1){
+.many-containers>div>span:nth-of-type(1) {
     display: block;
     color: var(--verde);
     margin-top: 8px;
@@ -158,14 +162,14 @@ body {
     font-size: 14px;
 }
 
-.many-containers > div > span:nth-of-type(2){
+.many-containers>div>span:nth-of-type(2) {
     color: var(--rojo);
     display: block;
     margin: 5px 0;
     font-weight: 400;
 }
 
-.many-containers > div > a{
+.many-containers>div>a {
     display: block;
     background-color: var(--verde);
     color: #fff;
@@ -179,5 +183,55 @@ body {
 }
 
 .second-main-container {
-  
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+
+.second-main-container > div{
+    border-left: 1px solid black;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.second-main-container > img{
+    
+}
+
+
+
+@media (max-width: 1150px) {
+    .second-main-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .second-main-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+.footer-container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.footer-container>div>span {
+    color: var(--grisClaro);
+
+}
+
+.footer-container>div>span:nth-of-type(2n+2) {
+    color: var(--verde);
+}
+
+.footer-container > div > img{
+    margin-left: 30px;
+    width: 13px;
 }

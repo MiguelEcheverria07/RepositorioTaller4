@@ -33,6 +33,7 @@
     var parrafoDos = crearNodoConTexto("p", "All images used in this template are from ");
     var unsplash = crearNodoConTexto("span", "Unsplash.");
     var botonVerdeMedio = crearNodoConTexto("a", "PRE-BOOKING");
+    var contenedorPaises = crearNodo("div");
     var variosDivs = crearNodo("div");
     var divPaisUno = crearNodo("div");
     var divPaisDos = crearNodo("div");
@@ -58,6 +59,32 @@
     var precioFrance = crearNodoConTexto("a", "$2,300 BOOK NOW");
     var precioGermany = crearNodoConTexto("a", "$3,100 BOOK NOW");
     var precioSpain = crearNodoConTexto("a", "$4,800 BOOK NOW");
+    var imagenCohete = crearNodoImagen("cohete.png", "CohetePng");
+    var imagenPalmera = crearNodoImagen("palmera.png", "PalmeraPng");
+    var imagenDelfin = crearNodoImagen("delfin.png", "DelfinPng");
+    var imagenCohete1 = crearNodoImagen("cohete.png", "CohetePng");
+    var imagenPalmera1 = crearNodoImagen("palmera.png", "PalmeraPng");
+    var imagenDelfin1 = crearNodoImagen("delfin.png", "DelfinPng");
+    var segundoLogo = crearNodoImagen("logo.png", "LogoPng");
+    var contenedorCopy = crearNodo("div");
+    var textoCopy = crearNodoConTexto("span", "Copyright © 2084 ");
+    var guion = crearNodoConTexto("span", " - ");
+    var by = crearNodoConTexto("span", " by ");
+    var company = crearNodoConTexto("span", "Company Name");
+    var travel = crearNodoConTexto("span", "Travel");
+    var templatemo = crearNodoConTexto("span", "templatemo");
+    var facebook = crearNodoImagen("facebook.png", "FacebookPng");
+    var twitter = crearNodoImagen("twitter.png", "TwiitterPng");
+    var linkedin = crearNodoImagen("linkedin.png", "LinkedinPng");
+    var flickr = crearNodoImagen("flickr.png", "FlickrPng");
+    var wifi = crearNodoImagen("wifi.png", "WifiPng");
+    var contenedorLogos = crearNodo("div");
+    var divCohete = crearNodo("div");
+    var divPalmera = crearNodo("div");
+    var divDelfin = crearNodo("div");
+    var divCohete1 = crearNodo("div");
+    var divPalmera1 = crearNodo("div");
+    var divDelfin1 = crearNodo("div");
     adicionarNodoABody(divPadreUno); 
     adicionarNodoAContenedor(divMenu, divPadreUno); //divPadreUno > divMenu
     adicionarNodoAContenedor(logoImg, divMenu); //divMenu > Elementos
@@ -74,7 +101,8 @@
     adicionarNodoAContenedor(parrafoDos, divMedio);
     adicionarNodoAContenedor(unsplash, divMedio);
     adicionarNodoAContenedor(botonVerdeMedio, divMedio);
-    adicionarNodoAContenedor(variosDivs, divPadreUno); //Muchos Divs > Elementos
+    adicionarNodoAContenedor(contenedorPaises, divPadreUno);
+    adicionarNodoAContenedor(variosDivs, contenedorPaises); //Muchos Divs > Elementos
     adicionarNodoAContenedor(divPaisUno,variosDivs);
     adicionarNodoAContenedor(divPaisDos,variosDivs);
     adicionarNodoAContenedor(divPaisTres,variosDivs);
@@ -101,7 +129,33 @@
     adicionarNodoAContenedor(precioSpain, divPaisCuatro);
 
     adicionarNodoABody(divPadreDos); //divPadreDos > Elementos
-    adicionarNodoABody(divPadreTres);
+    adicionarNodoAContenedor(divCohete, divPadreDos);
+    adicionarNodoAContenedor(divPalmera, divPadreDos);
+    adicionarNodoAContenedor(divDelfin, divPadreDos);
+    adicionarNodoAContenedor(divCohete1, divPadreDos);
+    adicionarNodoAContenedor(divPalmera1, divPadreDos);
+    adicionarNodoAContenedor(divDelfin1, divPadreDos);
+    adicionarNodoAContenedor(imagenCohete, divCohete);
+    adicionarNodoAContenedor(imagenPalmera, divPalmera);
+    adicionarNodoAContenedor(imagenDelfin, divDelfin);
+    adicionarNodoAContenedor(imagenCohete1, divCohete1);
+    adicionarNodoAContenedor(imagenPalmera1, divPalmera1);
+    adicionarNodoAContenedor(imagenDelfin1, divDelfin1);
+    adicionarNodoABody(divPadreTres); //divPadreTres > Elementos
+    adicionarNodoAContenedor(segundoLogo, divPadreTres);
+    adicionarNodoAContenedor(contenedorCopy, divPadreTres);
+    adicionarNodoAContenedor(textoCopy, contenedorCopy)
+    adicionarNodoAContenedor(company, contenedorCopy);
+    adicionarNodoAContenedor(guion, contenedorCopy);
+    adicionarNodoAContenedor(travel, contenedorCopy);
+    adicionarNodoAContenedor(by, contenedorCopy);
+    adicionarNodoAContenedor(templatemo, contenedorCopy);
+    adicionarNodoAContenedor(contenedorLogos, divPadreTres);
+    adicionarNodoAContenedor(facebook, contenedorLogos);
+    adicionarNodoAContenedor(twitter, contenedorLogos);
+    adicionarNodoAContenedor(linkedin, contenedorLogos);
+    adicionarNodoAContenedor(flickr, contenedorLogos);
+    adicionarNodoAContenedor(wifi, contenedorLogos);
     divPadreUno.setAttribute("class", "container-main");
     divPadreDos.setAttribute("class", "second-main-container");
     divMenu.setAttribute("class", "menu-container");
@@ -109,8 +163,9 @@
     divMedio.setAttribute("class", "middle-container");
     spanPrecio.setAttribute("class", "span-price");
     veniceItaly.setAttribute("class", "veniceItaly");
+    contenedorPaises.setAttribute("class", "country-container");
     variosDivs.setAttribute("class", "many-containers");
-
+    divPadreTres.setAttribute("class", "footer-container");
 
 </script>
 
