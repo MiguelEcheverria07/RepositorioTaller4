@@ -16,7 +16,9 @@ body {
     background-repeat: no-repeat;
     height: 48.15vw;
     position: relative;
-    margin-bottom: 50vh;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
 }
 
 .container-main::after {
@@ -36,7 +38,6 @@ body {
     background-color: #fff;
     padding: 2vw 1.9vw;
     margin-top: 4.42vw;
-    margin-left: 7.72vw;
     height: 46px;
     width: 79.6vw;
     z-index: 2;
@@ -121,12 +122,18 @@ body {
     background-color: #fff;
     text-align: center;
     padding: 2.5vw;
-    margin: 18vw 0 0 7.72vw;
+    left: 0;
+    margin: 15vw 0 0 7.8vw;
     z-index: 2;
 }
 
 .country-container {
     border: 1px solid blue;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -134,9 +141,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    position: absolute;
-    margin: 44.35vw 0 0 7.72vw;
+    gap: 30px;
+    position: relative;
     z-index: 2;
 }
 
@@ -185,20 +191,22 @@ body {
 .second-main-container {
     background-color: #eee;
     display: grid;
+    margin-top: 5vw;
     grid-template-columns: repeat(auto-fit, minmax(150px, 0.14fr));
     justify-content: center;
     grid-auto-flow: dense;
+    grid-auto-columns: minmax(10vw, 1fr);
+    position: relative;;
+
 }
 
-.second-main-container > div{
-    border-left: 1px solid black;
+.second-main-container>div {
+    border-left: 1px solid #d4d4d4;
     padding: 30px 0;
     text-align: center;
 }
 
-.second-main-container > img{
-    
-}
+.second-main-container>img {}
 
 
 
@@ -215,7 +223,6 @@ body {
 }
 
 .footer-container {
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -231,7 +238,7 @@ body {
     color: var(--verde);
 }
 
-.footer-container > div > img{
+.footer-container>div>img {
     margin-left: 30px;
     width: 13px;
 }
