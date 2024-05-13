@@ -46,7 +46,6 @@ body {
 .menu-container>div {
     position: relative;
     margin-left: 30vw;
-    border: 1px solid blue;
     right: 0;
     top: 0;
     bottom: 0;
