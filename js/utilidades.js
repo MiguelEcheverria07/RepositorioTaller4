@@ -34,10 +34,10 @@ function adicionarNodoAContenedor(nodo, contenedor) {
     contenedor.appendChild(nodo);
 }
 
+// CREAR NODOS
 var divPadreUno = crearNodo("div");
 var divPadreDos = crearNodo("div");
 var divPadreTres = crearNodo("div");
-var imagenFondo = crearNodoImagen("fondo.jpg", "FondoImg");
 var divMenu = crearNodo("div");
 var divNav = crearNodo("div");
 var logoImg = crearNodoImagen("logo.png", "LogoPng");
@@ -110,30 +110,33 @@ var flechaGris = crearNodoConTexto("a", "←");
 var flechaGris2 = crearNodoConTexto("a", "→");
 var flechaVerde = crearNodoConTexto("a", "←");
 var flechaVerde2 = crearNodoConTexto("a", "→");
+
+// ADICIONAR NODOS
 adicionarNodoABody(divPadreUno); 
-adicionarNodoAContenedor(divMenu, divPadreUno); //divPadreUno > divMenu
-adicionarNodoAContenedor(divFlechaGris, divPadreUno);
+adicionarNodoAContenedor(divMenu, divPadreUno); 
+adicionarNodoAContenedor(divFlechaGris, divPadreUno); 
 adicionarNodoAContenedor(flechaGris, divFlechaGris);
 adicionarNodoAContenedor(flechaGris2, divFlechaGris);
 adicionarNodoAContenedor(flechaVerde, divPaisUno);
 adicionarNodoAContenedor(flechaVerde2, divPaisCuatro);
-divFlechaGris.setAttribute("class", "arrow-container");
-adicionarNodoAContenedor(logoImg, divMenu); //divMenu > Elementos
+adicionarNodoAContenedor(logoImg, divMenu); 
 adicionarNodoAContenedor(divNav, divMenu)
 adicionarNodoAContenedor(home, divNav);
 adicionarNodoAContenedor(services, divNav);
 adicionarNodoAContenedor(events, divNav);
 adicionarNodoAContenedor(about, divNav);
 adicionarNodoAContenedor(contact, divNav); 
-adicionarNodoAContenedor(divMedio, divPadreUno); //divMedio > Elementos
+
+adicionarNodoAContenedor(divMedio, divPadreUno);
 adicionarNodoAContenedor(spanPrecio, divMedio);
 adicionarNodoAContenedor(veniceItaly, divMedio);
 adicionarNodoAContenedor(parrafoEnDivMedio, divMedio);
 adicionarNodoAContenedor(parrafoDos, divMedio);
 adicionarNodoAContenedor(unsplash, divMedio);
 adicionarNodoAContenedor(botonVerdeMedio, divMedio);
-adicionarNodoABody(contenedorPaises);
-adicionarNodoAContenedor(variosDivs, contenedorPaises); //Muchos Divs > Elementos
+
+adicionarNodoABody(contenedorPaises); 
+adicionarNodoAContenedor(variosDivs, contenedorPaises); 
 adicionarNodoAContenedor(divPaisUno,variosDivs);
 adicionarNodoAContenedor(divPaisDos,variosDivs);
 adicionarNodoAContenedor(divPaisTres,variosDivs);
@@ -158,7 +161,8 @@ adicionarNodoAContenedor(imagenSpain, divPaisCuatro);
 adicionarNodoAContenedor(ciudadesSpain, divPaisCuatro);
 adicionarNodoAContenedor(hotelSpain, divPaisCuatro);
 adicionarNodoAContenedor(precioSpain, divPaisCuatro);
-adicionarNodoABody(divPadreDos); //divPadreDos > Elementos
+
+adicionarNodoABody(divPadreDos); 
 adicionarNodoAContenedor(divCohete, divPadreDos);
 adicionarNodoAContenedor(divPalmera, divPadreDos);
 adicionarNodoAContenedor(divDelfin, divPadreDos);
@@ -171,7 +175,8 @@ adicionarNodoAContenedor(imagenDelfin, divDelfin);
 adicionarNodoAContenedor(imagenCohete1, divCohete1);
 adicionarNodoAContenedor(imagenPalmera1, divPalmera1);
 adicionarNodoAContenedor(imagenDelfin1, divDelfin1);
-adicionarNodoABody(divPadreTres); //divPadreTres > Elementos
+
+adicionarNodoABody(divPadreTres); 
 adicionarNodoAContenedor(segundoLogo, divPadreTres);
 adicionarNodoAContenedor(contenedorCopy, divPadreTres);
 adicionarNodoAContenedor(textoCopy, contenedorCopy)
@@ -186,39 +191,26 @@ adicionarNodoAContenedor(twitter, contenedorLogos);
 adicionarNodoAContenedor(linkedin, contenedorLogos);
 adicionarNodoAContenedor(flickr, contenedorLogos);
 adicionarNodoAContenedor(wifi, contenedorLogos);
-home.classList.add("home");
-divPadreUno.setAttribute("class", "container-main");
-divPadreDos.setAttribute("class", "second-main-container");
-divMenu.setAttribute("class", "menu-container");
-home.setAttribute("id", "home");
-divMedio.setAttribute("class", "middle-container");
-spanPrecio.setAttribute("class", "span-price");
-veniceItaly.setAttribute("class", "veniceItaly");
-contenedorPaises.setAttribute("class", "country-container");
-variosDivs.setAttribute("class", "many-containers");
-divPadreTres.setAttribute("class", "footer-container");
 
+//ESTILOS
 
-// Definición de variables CSS
 document.documentElement.style.setProperty('--verde', '#9ed034');
 document.documentElement.style.setProperty('--rojo', '#e54747');
 document.documentElement.style.setProperty('--grisClaro', '#888');
 
-// Estilos para el body
 document.body.style.margin = '0';
 document.body.style.fontFamily = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
 document.body.style.fontSize = '13px';
 
-// Estilos para .container-main
-divPadreUno.style.backgroundImage = 'url("../recursos/imagenes/fondo.jpg")';
+divPadreUno.style.backgroundImage = 'url(recursos/imagenes/fondo.jpg)';
 divPadreUno.style.backgroundSize = '98.75vw';
 divPadreUno.style.backgroundRepeat = 'no-repeat';
 divPadreUno.style.height = '48.15vw';
 divPadreUno.style.position = 'relative';
 divPadreUno.style.display = 'flex';
 divPadreUno.style.justifyContent = 'center';
+divPadreUno.setAttribute("class", "container-main");
 
-// Estilos para .container-main::after
 var afterElement = document.createElement('style');
 afterElement.textContent = `
     .container-main::after {
@@ -232,7 +224,6 @@ afterElement.textContent = `
 `;
 document.head.appendChild(afterElement);
 
-// Estilos para .arrow-container
 divFlechaGris.style.zIndex = '2';
 divFlechaGris.style.width = '100%';
 divFlechaGris.style.display = 'flex';
@@ -240,7 +231,6 @@ divFlechaGris.style.position = 'absolute';
 divFlechaGris.style.justifyContent = 'space-between';
 divFlechaGris.style.margin = '25% 0';
 
-// Estilos para .arrow-container > a
 flechaGris.style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
 flechaGris.style.fontSize = '15px';
 flechaGris.style.padding = '20px 15px';
@@ -253,8 +243,6 @@ flechaGris2.style.padding = '20px 15px';
 flechaGris2.style.alignItems = 'center';
 flechaGris2.style.textDecoration = 'none';
 
-
-// Estilos para .menu-container
 divMenu.style.position = 'relative';
 divMenu.style.display = 'flex';
 divMenu.style.justifyContent = 'space-between';
@@ -267,7 +255,6 @@ divMenu.style.height = '46px';
 divMenu.style.zIndex = '2';
 divMenu.style.overflow = 'hidden';
 
-// Estilos para .menu-container > div
 divNav.style.position = 'relative';
 divNav.style.marginLeft = '30vw';
 divNav.style.right = '0';
@@ -276,7 +263,6 @@ divNav.style.bottom = '0';
 divNav.style.display = 'flex';
 divNav.style.alignItems = 'center';
 
-// Estilos para @media (max-width: 1150px)
 var mediaQuery = window.matchMedia('(max-width: 1150px)');
 if (mediaQuery.matches) {
     divNav.style.marginLeft = '18vw';
@@ -285,20 +271,20 @@ var links = divNav.querySelectorAll('a');
 links.forEach(function(link) {
     link.style.color = '#afafaf';
     link.style.fontSize = '14px';
-    link.style.padding = '100% 1.8vw'; // Ajuste de padding
+    link.style.padding = '100% 1.8vw'; 
     link.style.borderLeft = '1px solid #eee';
     link.style.textDecoration = 'none';
-    link.style.display = 'inline-block'; // Asegurar que los enlaces sean inline-block para controlar su tamaño
+    link.style.display = 'inline-block'; 
     link.style.whiteSpace = 'nowrap'; 
 });
 
-// Estilos específicos para el enlace "HOME"
+home.classList.add("home");
 var homeLink = divNav.querySelector('a.home');
 if (homeLink) {
     homeLink.style.color = '#fff'; 
     homeLink.style.backgroundColor = 'var(--verde)';
 }
-// Estilos para .middle-container
+
 divMedio.style.position = 'absolute';
 divMedio.style.backgroundColor = '#fff';
 divMedio.style.textAlign = 'center';
@@ -307,33 +293,27 @@ divMedio.style.left = '0';
 divMedio.style.margin = '15vw 0 0 7.8vw';
 divMedio.style.zIndex = '2';
 
-// Estilos para .span-price
 spanPrecio.style.backgroundColor = 'var(--rojo)';
 spanPrecio.style.color = '#fff';
 spanPrecio.style.fontWeight = '700';
 spanPrecio.style.fontSize = '28px';
 spanPrecio.style.padding = '0.4vw 1.3vw';
 
-// Estilos para .veniceItaly
 veniceItaly.style.margin = '2.1vw 0 1.55vw 0';
 veniceItaly.style.fontSize = '1.85vw';
 veniceItaly.style.fontWeight = '600';
 veniceItaly.style.color = '#444';
 
-// Estilos para .middle-container > p
 parrafoEnDivMedio.style.color = 'var(--grisClaro)';
-
-// Estilos específicos para p:nth-of-type(1) y p:nth-of-type(2)
 parrafoEnDivMedio.style.display = 'block';
 parrafoEnDivMedio.style.marginBottom = '0';
+
 parrafoDos.style.marginTop = '0';
 parrafoDos.style.color = 'var(--grisClaro)';
 parrafoDos.style.display = 'inline';
 
-// Estilos para .middle-container > span:nth-of-type(2)
 unsplash.style.color = 'var(--verde)';
 
-// Estilos para .middle-container > a
 botonVerdeMedio.style.backgroundColor = 'var(--verde)';
 botonVerdeMedio.style.display = 'block';
 botonVerdeMedio.style.textAlign = 'center';
@@ -343,7 +323,6 @@ botonVerdeMedio.style.padding = '0.8vw 2.2vw';
 botonVerdeMedio.style.color = '#fff';
 botonVerdeMedio.style.fontWeight = '700';
 
-// Estilos para .country-container
 contenedorPaises.style.position = 'relative';
 contenedorPaises.style.marginTop = '-53px';
 contenedorPaises.style.height = 'auto';
@@ -351,7 +330,6 @@ contenedorPaises.style.width = '100%';
 contenedorPaises.style.display = 'flex';
 contenedorPaises.style.justifyContent = 'center';
 
-// Estilos para .many-containers
 variosDivs.style.display = 'flex';
 variosDivs.style.justifyContent = 'center';
 variosDivs.style.gap = '30px';
@@ -359,7 +337,6 @@ variosDivs.style.flexWrap = 'wrap';
 variosDivs.style.position = 'relative';
 variosDivs.style.zIndex = '2';
 
-// Estilos para .many-containers > div > a
 var links2 = variosDivs.querySelectorAll('div > a');
 links2.forEach(function(link) {
     link.style.display = 'block';
@@ -373,14 +350,12 @@ links2.forEach(function(link) {
     link.style.padding = '12px 0';
 });
 
-// Estilos para .many-containers > div:nth-of-type(1) > a:nth-of-type(2)
 var div1 = variosDivs.children[0]; 
 var link1 = div1.children[0]; 
 link1.style.position = 'absolute';
 link1.style.top = '130px';
 link1.style.marginTop = '12px'; 
 
-// Estilos para .many-containers > div:nth-last-of-type(1) > a:nth-last-of-type(2)
 var ultimoDiv = variosDivs.children[3];
 var ultimoLink = ultimoDiv.children[0];
 ultimoLink.style.position = 'absolute';
@@ -390,20 +365,17 @@ ultimoLink.style.marginTop = '12px';
 link1.style.setProperty('padding', '12px 15px');
 ultimoLink.style.setProperty('padding', '12px 15px');
 
-// Estilos para .many-containers > div
 var divs = variosDivs.querySelectorAll('div');
 divs.forEach(function(div) {
     div.style.marginBottom = '20px';
     div.style.width = '22%';
 });
 
-// Estilos para .many-containers > div > img
 var imagenes = variosDivs.querySelectorAll('div > img');
 imagenes.forEach(function(imagen) {
     imagen.style.width = '100%';
 });
 
-// Estilos para @media (max-width: 1000px)
 var mediaQuery1000 = window.matchMedia('(max-width: 1100px)');
 if (mediaQuery1000.matches) {
     divs[divs.length - 1].style.display = 'none';
@@ -414,7 +386,6 @@ if (mediaQuery1000.matches) {
     variosDivs.style.marginTop = '80px';
 }
 
-// Estilos para @media (max-width:720px)
 var mediaQuery720 = window.matchMedia('(max-width: 820px)');
 if (mediaQuery720.matches) {
     divs.forEach(function(div) {
@@ -424,7 +395,6 @@ if (mediaQuery720.matches) {
     divs[divs.length - 1].style.display = 'block';
 }
 
-// Estilos para .many-containers > div > h4
 var titulos = variosDivs.querySelectorAll('div > h4');
 titulos.forEach(function(titulo) {
     titulo.style.backgroundColor = 'var(--verde)';
@@ -436,7 +406,6 @@ titulos.forEach(function(titulo) {
     titulo.style.textAlign = 'center';
 });
 
-// Estilos para .many-containers > div > span:nth-of-type(1)
 var spans1 = variosDivs.querySelectorAll('div > span:nth-of-type(1)');
 spans1.forEach(function(span) {
     span.style.display = 'block';
@@ -446,7 +415,6 @@ spans1.forEach(function(span) {
     span.style.fontSize = '14px';
 });
 
-// Estilos para .many-containers > div > span:nth-of-type(2)
 var spans2 = variosDivs.querySelectorAll('div > span:nth-of-type(2)');
 spans2.forEach(function(span) {
     span.style.color = 'var(--rojo)';
@@ -455,7 +423,6 @@ spans2.forEach(function(span) {
     span.style.fontWeight = '400';
 });
 
-// Estilos para .second-main-container
 divPadreDos.style.backgroundColor = '#eee';
 divPadreDos.style.display = 'grid';
 divPadreDos.style.marginTop = '5vw';
@@ -465,7 +432,6 @@ divPadreDos.style.gridAutoFlow = 'dense';
 divPadreDos.style.gridAutoColumns = 'minmax(10vw, 1fr)';
 divPadreDos.style.position = 'relative';
 
-// Estilos para .second-main-container > div
 var divsSegundoMain = divPadreDos.querySelectorAll('div');
 divsSegundoMain.forEach(function(div) {
     div.style.borderLeft = '1px solid #d4d4d4';
@@ -473,10 +439,8 @@ divsSegundoMain.forEach(function(div) {
     div.style.textAlign = 'center';
 });
 
-// Estilos para .second-main-container > div:nth-last-of-type(1)
 divsSegundoMain[divsSegundoMain.length - 1].style.borderRight = '1px solid #d4d4d4';
 
-// Estilos para @media (max-width: 1050px)
 var mediaQuery1050 = window.matchMedia('(max-width: 1050px)');
 if (mediaQuery1050.matches) {
     divPadreDos.style.gridTemplateColumns = 'auto auto auto';
@@ -486,25 +450,21 @@ if (mediaQuery1050.matches) {
     });
 }
 
-// Estilos para @media (max-width: 800px)
 var mediaQuery800 = window.matchMedia('(max-width: 800px)');
 if (mediaQuery800.matches) {
     divPadreDos.style.gridTemplateColumns = 'auto auto';
 }
 
-// Estilos para .footer-container
 divPadreTres.style.display = 'flex';
 divPadreTres.style.justifyContent = 'space-around';
 divPadreTres.style.alignItems = 'center';
 divPadreTres.style.padding = '100px 0';
 
-// Estilos para .footer-container > div > span
 var spansFooter = divPadreTres.querySelectorAll('div > span');
 spansFooter.forEach(function(span) {
     span.style.color = 'var(--grisClaro)';
 });
 
-// Estilos para .footer-container > div > span:nth-of-type(2n+2)
 spansFooter.forEach(function(span, index) {
     if (index % 2 !== 0) {
         span.style.color = 'var(--verde)';
@@ -512,7 +472,6 @@ spansFooter.forEach(function(span, index) {
 });
 
 
-// Estilos para .footer-container > div > img
 var imagenesFooter = divPadreTres.querySelectorAll('div > div > img');
 imagenesFooter.forEach(function(imagen) {
     imagen.style.marginLeft = '30px';
