@@ -30,12 +30,12 @@ body {
 }
 
 .arrow-container {
-    z-index: 2;
     width: 100%;
     display: flex;
     position: absolute;
     justify-content: space-between;
     margin: 25% 0;
+    z-index: 2;
 }
 
 .arrow-container>a {

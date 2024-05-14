@@ -471,10 +471,8 @@ spansFooter.forEach(function(span, index) {
     }
 });
 
-
 var imagenesFooter = divPadreTres.querySelectorAll('div > div > img');
 imagenesFooter.forEach(function(imagen) {
     imagen.style.marginLeft = '30px';
     imagen.style.width = '13px';
 });
-
